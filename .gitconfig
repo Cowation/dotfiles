@@ -1,0 +1,8 @@
+[user]
+	name = Cowation
+	email = cow2cow4cow@gmail.com
+	signingkey = B4617FBCBC45B742
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
