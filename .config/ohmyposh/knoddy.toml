@@ -35,12 +35,38 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   foreground = "p:green"
   template = "❯"
 
+[[blocks]]
+  type = "rprompt"
+  alignment = "right"
+
+[[blocks.segments]]
+  type = "shell"
+  style = "plain"
+  foreground = "p:gray"
+  template = "{{.Shell}}"
+
+[[blocks.segments]]
+  type = "text"
+  style = "plain"
+  foreground = "p:gray"
+  template = "/"
+
+[[blocks.segments]]
+  type = "os"
+  style = "plain"
+  template = "{{.Icon}}"
+
+[blocks.segments.properties]
+  debian = "<p:red,transparent>debian</>"
+  windows = "<p:blue,transparent>windows</>"
+
 [palette]
   black = '#262B44'
-  blue = '#4B95E9'
+  blue = '#0079D5'
   green = '#D8FC5C'
   purple = '#885CFC'
   orange = '#F07623'
-  red = '#D81E5B'
+  red = '#CE0056'
   white = '#E0DEF4'
   yellow = '#F3AE35'
+  gray = '#878787'
