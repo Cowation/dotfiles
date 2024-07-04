@@ -43,5 +43,8 @@ export NVM_DIR="$HOME/.nvm"
 # GPG
 export GPG_TTY=$(tty)
 
+# SSH agent
+eval $(ssh-agent) > /dev/null
+
 # Git .dotfiles management
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
